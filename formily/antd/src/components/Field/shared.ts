@@ -95,6 +95,9 @@ export const createFieldSchema = (
           enum: {
             'x-decorator': 'FormItem',
             'x-component': DataSourceSetter,
+            'x-component-props': {
+              allowExtendOption: false,
+            },
           },
           'x-validator': {
             type: 'array',
