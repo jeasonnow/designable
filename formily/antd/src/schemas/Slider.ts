@@ -37,20 +37,6 @@ export const Slider: ISchema = {
       'x-decorator': 'FormItem',
       'x-component': 'Switch',
     },
-    tooltipPlacement: {
-      'x-decorator': 'FormItem',
-      'x-component': 'ValueInput',
-      'x-component-props': {
-        include: ['EXPRESSION'],
-      },
-    },
-    marks: {
-      'x-decorator': 'FormItem',
-      'x-component': 'ValueInput',
-      'x-component-props': {
-        include: ['EXPRESSION'],
-      },
-    },
     max: {
       type: 'number',
       'x-decorator': 'FormItem',

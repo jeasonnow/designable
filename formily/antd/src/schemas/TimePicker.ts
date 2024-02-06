@@ -27,27 +27,6 @@ export const CommonTimePickerAPI = {
     'x-decorator': 'FormItem',
     'x-component': 'Input',
   },
-  disabledHours: {
-    'x-decorator': 'FormItem',
-    'x-component': 'ValueInput',
-    'x-component-props': {
-      include: ['EXPRESSION'],
-    },
-  },
-  disabledMinutes: {
-    'x-decorator': 'FormItem',
-    'x-component': 'ValueInput',
-    'x-component-props': {
-      include: ['EXPRESSION'],
-    },
-  },
-  disabledSeconds: {
-    'x-decorator': 'FormItem',
-    'x-component': 'ValueInput',
-    'x-component-props': {
-      include: ['EXPRESSION'],
-    },
-  },
   hideDisabledOptions: {
     type: 'boolean',
     'x-decorator': 'FormItem',

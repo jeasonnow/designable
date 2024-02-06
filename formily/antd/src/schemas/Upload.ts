@@ -17,7 +17,7 @@ export const Upload: ISchema & { Dragger?: ISchema } = {
       'x-decorator': 'FormItem',
       'x-component': 'ValueInput',
       'x-component-props': {
-        include: ['TEXT', 'EXPRESSION'],
+        include: ['TEXT'],
       },
     },
     name: {
@@ -40,20 +40,6 @@ export const Upload: ISchema & { Dragger?: ISchema } = {
       'x-component-props': {
         defaultValue: 'POST',
         optionType: 'button',
-      },
-    },
-    data: {
-      'x-decorator': 'FormItem',
-      'x-component': 'ValueInput',
-      'x-component-props': {
-        include: ['EXPRESSION'],
-      },
-    },
-    headers: {
-      'x-decorator': 'FormItem',
-      'x-component': 'ValueInput',
-      'x-component-props': {
-        include: ['EXPRESSION'],
       },
     },
 

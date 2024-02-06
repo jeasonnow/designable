@@ -79,14 +79,6 @@ export const TreeSelect: ISchema = {
         defaultValue: 'SHOW_CHILD',
       },
     },
-    treeDefaultExpandedKeys: {
-      type: 'boolean',
-      'x-decorator': 'FormItem',
-      'x-component': 'ValueInput',
-      'x-component-props': {
-        include: ['EXPRESSION'],
-      },
-    },
     treeNodeFilterProp: {
       type: 'string',
       'x-decorator': 'FormItem',
@@ -102,7 +94,7 @@ export const TreeSelect: ISchema = {
       'x-decorator': 'FormItem',
       'x-component': 'ValueInput',
       'x-component-props': {
-        include: ['BOOLEAN', 'EXPRESSION'],
+        include: ['BOOLEAN'],
       },
     },
     treeDataSimpleMode: {
@@ -110,7 +102,7 @@ export const TreeSelect: ISchema = {
       'x-decorator': 'FormItem',
       'x-component': 'ValueInput',
       'x-component-props': {
-        include: ['BOOLEAN', 'EXPRESSION'],
+        include: ['BOOLEAN'],
       },
     },
     listHeight: {

@@ -42,20 +42,6 @@ export const NumberPicker: ISchema = {
         defaultValue: 'middle',
       },
     },
-    formatter: {
-      'x-decorator': 'FormItem',
-      'x-component': 'ValueInput',
-      'x-component-props': {
-        include: ['EXPRESSION'],
-      },
-    },
-    parser: {
-      'x-decorator': 'FormItem',
-      'x-component': 'ValueInput',
-      'x-component-props': {
-        include: ['EXPRESSION'],
-      },
-    },
     stringMode: {
       type: 'boolean',
       'x-decorator': 'FormItem',

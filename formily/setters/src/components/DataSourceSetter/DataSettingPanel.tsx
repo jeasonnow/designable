@@ -95,7 +95,7 @@ export const DataSettingPanel: React.FC<IDataSettingPanelProps> = observer(
                       <TextWidget token="SettingComponents.DataSourceSetter.label" />
                     }
                     x-decorator="FormItem"
-                    x-disabled={!allowExtendOption}
+                    x-disabled={true}
                     name="label"
                     x-component="Input"
                   />

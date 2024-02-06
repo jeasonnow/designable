@@ -29,14 +29,6 @@ export const FormGrid: ISchema & { GridColumn?: ISchema } = {
       'x-decorator': 'FormItem',
       'x-component': 'NumberPicker',
     },
-    breakpoints: {
-      type: 'number',
-      'x-decorator': 'FormItem',
-      'x-component': 'ValueInput',
-      'x-component-props': {
-        include: ['EXPRESSION'],
-      },
-    },
     columnGap: {
       type: 'number',
       'x-decorator': 'FormItem',

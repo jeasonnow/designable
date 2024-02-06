@@ -41,36 +41,6 @@ export const createComponentSchema = (
         'x-decorator-props': decorator,
       },
     },
-    'component-style-group': {
-      type: 'void',
-      'x-component': 'CollapseItem',
-      'x-component-props': { defaultExpand: false },
-      'x-reactions': {
-        fulfill: {
-          state: {
-            visible: '{{!!$form.values["x-component"]}}',
-          },
-        },
-      },
-      properties: {
-        'x-component-props.style': AllSchemas.CSSStyle,
-      },
-    },
-    'decorator-style-group': {
-      type: 'void',
-      'x-component': 'CollapseItem',
-      'x-component-props': { defaultExpand: false },
-      'x-reactions': {
-        fulfill: {
-          state: {
-            visible: '{{!!$form.values["x-decorator"]}}',
-          },
-        },
-      },
-      properties: {
-        'x-decorator-props.style': AllSchemas.CSSStyle,
-      },
-    },
   }
 }
 
@@ -125,10 +95,6 @@ export const createFieldSchema = (
           enum: {
             'x-decorator': 'FormItem',
             'x-component': DataSourceSetter,
-          },
-          'x-reactions': {
-            'x-decorator': 'FormItem',
-            'x-component': ReactionsSetter,
           },
           'x-validator': {
             type: 'array',
@@ -203,10 +169,6 @@ export const createVoidFieldSchema = (
             'x-component-props': {
               defaultValue: 'editable',
             },
-          },
-          'x-reactions': {
-            'x-decorator': 'FormItem',
-            'x-component': ReactionsSetter,
           },
           'x-decorator': {
             type: 'string',

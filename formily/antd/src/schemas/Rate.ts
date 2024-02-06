@@ -24,13 +24,6 @@ export const Rate: ISchema = {
       'x-decorator': 'FormItem',
       'x-component': 'Switch',
     },
-    tooltips: {
-      'x-decorator': 'FormItem',
-      'x-component': 'ValueInput',
-      'x-component-props': {
-        include: ['EXPRESSION'],
-      },
-    },
     autoFocus: {
       type: 'boolean',
       'x-decorator': 'FormItem',

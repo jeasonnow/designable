@@ -88,15 +88,7 @@ export const Select: ISchema = {
       'x-decorator': 'FormItem',
       'x-component': 'ValueInput',
       'x-component-props': {
-        include: ['BOOLEAN', 'EXPRESSION'],
-      },
-    },
-    filterSort: {
-      type: 'boolean',
-      'x-decorator': 'FormItem',
-      'x-component': 'ValueInput',
-      'x-component-props': {
-        include: ['EXPRESSION'],
+        include: ['BOOLEAN'],
       },
     },
     listHeight: {

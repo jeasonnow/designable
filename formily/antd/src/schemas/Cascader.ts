@@ -29,22 +29,6 @@ export const Cascader: ISchema = {
         defaultChecked: true,
       },
     },
-    displayRender: {
-      type: 'string',
-      'x-decorator': 'FormItem',
-      'x-component': 'ValueInput',
-      'x-component-props': {
-        include: ['EXPRESSION'],
-      },
-    },
-    fieldNames: {
-      type: 'string',
-      'x-decorator': 'FormItem',
-      'x-component': 'ValueInput',
-      'x-component-props': {
-        include: ['EXPRESSION'],
-      },
-    },
     showSearch: {
       type: 'boolean',
       'x-decorator': 'FormItem',

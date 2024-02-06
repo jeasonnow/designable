@@ -22,20 +22,6 @@ const CommonDatePickerAPI = {
       defaultChecked: true,
     },
   },
-  disabledTime: {
-    'x-decorator': 'FormItem',
-    'x-component': 'ValueInput',
-    'x-component-props': {
-      include: ['EXPRESSION'],
-    },
-  },
-  disabledDate: {
-    'x-decorator': 'FormItem',
-    'x-component': 'ValueInput',
-    'x-component-props': {
-      include: ['EXPRESSION'],
-    },
-  },
   inputReadOnly: {
     type: 'boolean',
     'x-decorator': 'FormItem',
