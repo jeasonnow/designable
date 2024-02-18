@@ -12,7 +12,7 @@ const HELPER_DEBOUNCE_TIMEOUT = 100
 
 export interface IHelpersProps {
   node: TreeNode
-  nodeRect: DOMRect
+  nodeRect: any
 }
 export interface IViewportState {
   viewportWidth?: number
@@ -33,7 +33,7 @@ export const Helpers: React.FC<IHelpersProps> = ({ node, nodeRect }) => {
   useLayoutEffect(() => {
     let request = null
 
-    const getYInViewport = (nodeRect: DOMRect, helpersRect: DOMRect) => {
+    const getYInViewport = (nodeRect: any, helpersRect: any) => {
       if (nodeRect.top - viewport.scrollY > helpersRect.height) {
         return 'top'
       } else if (
@@ -51,7 +51,7 @@ export const Helpers: React.FC<IHelpersProps> = ({ node, nodeRect }) => {
       return 'bottom'
     }
 
-    const getXInViewport = (nodeRect: DOMRect, helpersRect: DOMRect) => {
+    const getXInViewport = (nodeRect: any, helpersRect: any) => {
       const widthDelta = helpersRect.width - nodeRect.width
       if (widthDelta >= 0) {
         if (nodeRect.x < widthDelta) {

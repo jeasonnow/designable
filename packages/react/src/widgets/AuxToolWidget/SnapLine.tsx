@@ -7,7 +7,7 @@ export const SnapLine = observer(() => {
   const cursor = useCursor()
   const transformHelper = useTransformHelper()
   const prefix = usePrefix('aux-snap-line')
-  const createLineStyle = (rect: DOMRect) => {
+  const createLineStyle = (rect: any) => {
     const baseStyle: React.CSSProperties = {
       top: 0,
       left: 0,

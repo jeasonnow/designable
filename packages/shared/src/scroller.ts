@@ -15,7 +15,7 @@ export interface IAutoScrollBasicInfo {
 export const calcAutoScrollBasicInfo = (
   point: IPoint,
   axis: 'x' | 'y',
-  viewport: DOMRect,
+  viewport: any,
   maxSpeed = MAX_SPEED
 ): IAutoScrollBasicInfo | null => {
   const { left, right, top, bottom } = viewport

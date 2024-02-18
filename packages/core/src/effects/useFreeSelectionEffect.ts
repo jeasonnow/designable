@@ -38,7 +38,7 @@ export const useFreeSelectionEffect = (engine: Engine) => {
         viewport.dragScrollXDelta,
         viewport.dragScrollYDelta
       )
-      const selected: [TreeNode, DOMRect][] = []
+      const selected: [TreeNode, any][] = []
       tree.eachChildren((node) => {
         const nodeRect = viewport.getValidNodeOffsetRect(node)
         if (nodeRect && isCrossRectInRect(selectionRect, nodeRect)) {

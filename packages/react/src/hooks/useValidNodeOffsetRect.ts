@@ -4,7 +4,7 @@ import { LayoutObserver } from '@designable/shared'
 import { useViewport } from './useViewport'
 import { useDesigner } from './useDesigner'
 
-const isEqualRect = (rect1: DOMRect, rect2: DOMRect) => {
+const isEqualRect = (rect1: any, rect2: any) => {
   return (
     rect1?.x === rect2?.x &&
     rect1?.y === rect2?.y &&
