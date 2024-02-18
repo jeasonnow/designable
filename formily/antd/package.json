@@ -1,6 +1,6 @@
 {
-  "name": "simple-designable-formily-antd",
-  "version": "1.0.1",
+  "name": "@designable/formily-antd",
+  "version": "1.0.0-beta.45",
   "license": "MIT",
   "main": "lib",
   "module": "esm",
