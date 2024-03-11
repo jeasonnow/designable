@@ -22,21 +22,21 @@ export const createComponentSchema = (
         'x-component-props': component,
       },
     },
-    'decorator-group': decorator && {
-      type: 'void',
-      'x-component': 'CollapseItem',
-      'x-component-props': { defaultExpand: false },
-      'x-reactions': {
-        fulfill: {
-          state: {
-            visible: '{{!!$form.values["x-decorator"]}}',
-          },
-        },
-      },
-      properties: {
-        'x-decorator-props': decorator,
-      },
-    },
+    // 'decorator-group': decorator && {
+    //   type: 'void',
+    //   'x-component': 'CollapseItem',
+    //   'x-component-props': { defaultExpand: false },
+    //   'x-reactions': {
+    //     fulfill: {
+    //       state: {
+    //         visible: '{{!!$form.values["x-decorator"]}}',
+    //       },
+    //     },
+    //   },
+    //   properties: {
+    //     'x-decorator-props': decorator,
+    //   },
+    // },
   }
 }
 
@@ -61,23 +61,23 @@ export const createFieldSchema = (
             'x-decorator': 'FormItem',
             'x-component': 'Input',
           },
-          description: {
-            type: 'string',
-            'x-decorator': 'FormItem',
-            'x-component': 'Input.TextArea',
-          },
-          'x-display': {
-            type: 'string',
-            enum: ['visible', 'hidden', 'none', ''],
-            'x-decorator': 'FormItem',
-            'x-component': 'Select',
-            'x-component-props': {
-              defaultValue: 'visible',
-            },
-          },
+          // description: {
+          //   type: 'string',
+          //   'x-decorator': 'FormItem',
+          //   'x-component': 'Input.TextArea',
+          // },
+          // 'x-display': {
+          //   type: 'string',
+          //   enum: ['visible', 'hidden', 'none', ''],
+          //   'x-decorator': 'FormItem',
+          //   'x-component': 'Select',
+          //   'x-component-props': {
+          //     defaultValue: 'visible',
+          //   },
+          // },
           'x-pattern': {
             type: 'string',
-            enum: ['editable', 'disabled', 'readOnly', 'readPretty', ''],
+            enum: ['editable', 'disabled'],
             'x-decorator': 'FormItem',
             'x-component': 'Select',
             'x-component-props': {
