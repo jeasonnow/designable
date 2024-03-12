@@ -89,22 +89,22 @@ export const TreeSelect: ISchema = {
       'x-decorator': 'FormItem',
       'x-component': 'Input',
     },
-    filterTreeNode: {
-      type: 'boolean',
-      'x-decorator': 'FormItem',
-      'x-component': 'ValueInput',
-      'x-component-props': {
-        include: ['BOOLEAN'],
-      },
-    },
-    treeDataSimpleMode: {
-      type: 'boolean',
-      'x-decorator': 'FormItem',
-      'x-component': 'ValueInput',
-      'x-component-props': {
-        include: ['BOOLEAN'],
-      },
-    },
+    // filterTreeNode: {
+    //   type: 'boolean',
+    //   'x-decorator': 'FormItem',
+    //   'x-component': 'ValueInput',
+    //   'x-component-props': {
+    //     include: ['BOOLEAN'],
+    //   },
+    // },
+    // treeDataSimpleMode: {
+    //   type: 'boolean',
+    //   'x-decorator': 'FormItem',
+    //   'x-component': 'ValueInput',
+    //   'x-component-props': {
+    //     include: ['BOOLEAN'],
+    //   },
+    // },
     listHeight: {
       type: 'number',
       'x-decorator': 'FormItem',
