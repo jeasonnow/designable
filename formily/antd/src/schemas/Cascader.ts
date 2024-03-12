@@ -16,11 +16,11 @@ export const Cascader: ISchema = {
       'x-decorator': 'FormItem',
       'x-component': 'Switch',
     },
-    autoFocus: {
-      type: 'boolean',
-      'x-decorator': 'FormItem',
-      'x-component': 'Switch',
-    },
+    // autoFocus: {
+    //   type: 'boolean',
+    //   'x-decorator': 'FormItem',
+    //   'x-component': 'Switch',
+    // },
     bordered: {
       type: 'boolean',
       'x-decorator': 'FormItem',

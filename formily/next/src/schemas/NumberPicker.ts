@@ -36,11 +36,11 @@ export const NumberPicker: ISchema = {
         precision: 0,
       },
     },
-    autoFocus: {
-      type: 'boolean',
-      'x-decorator': 'FormItem',
-      'x-component': 'Switch',
-    },
+    // autoFocus: {
+    //   type: 'boolean',
+    //   'x-decorator': 'FormItem',
+    //   'x-component': 'Switch',
+    // },
     max: {
       type: 'number',
       'x-decorator': 'FormItem',

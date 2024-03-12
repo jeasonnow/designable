@@ -83,11 +83,11 @@ export const Input: ISchema & { TextArea?: ISchema } = {
       'x-decorator': 'FormItem',
       'x-component': 'Input',
     },
-    autoFocus: {
-      type: 'boolean',
-      'x-decorator': 'FormItem',
-      'x-component': 'Switch',
-    },
+    // autoFocus: {
+    //   type: 'boolean',
+    //   'x-decorator': 'FormItem',
+    //   'x-component': 'Switch',
+    // },
   },
 }
 

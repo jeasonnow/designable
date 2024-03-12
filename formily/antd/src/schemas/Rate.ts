@@ -24,10 +24,10 @@ export const Rate: ISchema = {
       'x-decorator': 'FormItem',
       'x-component': 'Switch',
     },
-    autoFocus: {
-      type: 'boolean',
-      'x-decorator': 'FormItem',
-      'x-component': 'Switch',
-    },
+    // autoFocus: {
+    //   type: 'boolean',
+    //   'x-decorator': 'FormItem',
+    //   'x-component': 'Switch',
+    // },
   },
 }
