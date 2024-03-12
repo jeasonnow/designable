@@ -47,11 +47,11 @@ export const Transfer: ISchema = {
       'x-decorator': 'FormItem',
       'x-component': 'Input',
     },
-    notFoundContent: {
-      type: 'string',
-      'x-decorator': 'FormItem',
-      'x-component': 'Input',
-    },
+    // notFoundContent: {
+    //   type: 'string',
+    //   'x-decorator': 'FormItem',
+    //   'x-component': 'Input',
+    // },
     titles: {
       'x-decorator': 'FormItem',
       'x-component': 'ValueInput',

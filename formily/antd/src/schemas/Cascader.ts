@@ -34,14 +34,14 @@ export const Cascader: ISchema = {
       'x-decorator': 'FormItem',
       'x-component': 'Switch',
     },
-    notFoundContent: {
-      type: 'string',
-      'x-decorator': 'FormItem',
-      'x-component': 'Input',
-      'x-component-props': {
-        defaultValue: 'Not Found',
-      },
-    },
+    // notFoundContent: {
+    //   type: 'string',
+    //   'x-decorator': 'FormItem',
+    //   'x-component': 'Input',
+    //   'x-component-props': {
+    //     defaultValue: 'Not Found',
+    //   },
+    // },
     placeholder: {
       type: 'string',
       'x-decorator': 'FormItem',

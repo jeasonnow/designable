@@ -51,11 +51,11 @@ export const TreeSelect: ISchema = {
       'x-decorator': 'FormItem',
       'x-component': 'Switch',
     },
-    notFoundContent: {
-      type: 'string',
-      'x-decorator': 'FormItem',
-      'x-component': 'Input',
-    },
+    // notFoundContent: {
+    //   type: 'string',
+    //   'x-decorator': 'FormItem',
+    //   'x-component': 'Input',
+    // },
     multiple: {
       type: 'boolean',
       'x-decorator': 'FormItem',

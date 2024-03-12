@@ -75,11 +75,11 @@ export const Select: ISchema = {
         optionType: 'button',
       },
     },
-    notFoundContent: {
-      type: 'string',
-      'x-decorator': 'FormItem',
-      'x-component': 'Input',
-    },
+    // notFoundContent: {
+    //   type: 'string',
+    //   'x-decorator': 'FormItem',
+    //   'x-component': 'Input',
+    // },
     showDataSourceChildren: {
       type: 'boolean',
       'x-decorator': 'FormItem',
