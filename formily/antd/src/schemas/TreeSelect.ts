@@ -8,14 +8,14 @@ export const TreeSelect: ISchema = {
       'x-decorator': 'FormItem',
       'x-component': 'Switch',
     },
-    autoClearSearchValue: {
-      type: 'boolean',
-      'x-decorator': 'FormItem',
-      'x-component': 'Switch',
-      'x-component-props': {
-        defaultChecked: true,
-      },
-    },
+    // autoClearSearchValue: {
+    //   type: 'boolean',
+    //   'x-decorator': 'FormItem',
+    //   'x-component': 'Switch',
+    //   'x-component-props': {
+    //     defaultChecked: true,
+    //   },
+    // },
     // autoFocus: {
     //   type: 'boolean',
     //   'x-decorator': 'FormItem',
@@ -44,14 +44,14 @@ export const TreeSelect: ISchema = {
       'x-decorator': 'FormItem',
       'x-component': 'Switch',
     },
-    virtual: {
-      type: 'boolean',
-      'x-decorator': 'FormItem',
-      'x-component': 'Switch',
-      'x-component-props': {
-        defaultChecked: true,
-      },
-    },
+    // virtual: {
+    //   type: 'boolean',
+    //   'x-decorator': 'FormItem',
+    //   'x-component': 'Switch',
+    //   'x-component-props': {
+    //     defaultChecked: true,
+    //   },
+    // },
     treeCheckable: {
       type: 'boolean',
       'x-decorator': 'FormItem',
@@ -62,14 +62,14 @@ export const TreeSelect: ISchema = {
       'x-decorator': 'FormItem',
       'x-component': 'Switch',
     },
-    dropdownMatchSelectWidth: {
-      type: 'boolean',
-      'x-decorator': 'FormItem',
-      'x-component': 'Switch',
-      'x-component-props': {
-        defaultChecked: true,
-      },
-    },
+    // dropdownMatchSelectWidth: {
+    //   type: 'boolean',
+    //   'x-decorator': 'FormItem',
+    //   'x-component': 'Switch',
+    //   'x-component-props': {
+    //     defaultChecked: true,
+    //   },
+    // },
     showCheckedStrategy: {
       type: 'string',
       enum: ['SHOW_ALL', 'SHOW_PARENT', 'SHOW_CHILD'],

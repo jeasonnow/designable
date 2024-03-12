@@ -18,22 +18,22 @@ export const Select: ISchema = {
       'x-decorator': 'FormItem',
       'x-component': 'Switch',
     },
-    autoClearSearchValue: {
-      type: 'boolean',
-      'x-decorator': 'FormItem',
-      'x-component': 'Switch',
-      'x-component-props': {
-        defaultChecked: true,
-      },
-    },
-    dropdownMatchSelectWidth: {
-      type: 'boolean',
-      'x-decorator': 'FormItem',
-      'x-component': 'Switch',
-      'x-component-props': {
-        defaultChecked: true,
-      },
-    },
+    // autoClearSearchValue: {
+    //   type: 'boolean',
+    //   'x-decorator': 'FormItem',
+    //   'x-component': 'Switch',
+    //   'x-component-props': {
+    //     defaultChecked: true,
+    //   },
+    // },
+    // dropdownMatchSelectWidth: {
+    //   type: 'boolean',
+    //   'x-decorator': 'FormItem',
+    //   'x-component': 'Switch',
+    //   'x-component-props': {
+    //     defaultChecked: true,
+    //   },
+    // },
     // autoFocus: {
     //   type: 'boolean',
     //   'x-decorator': 'FormItem',
@@ -55,11 +55,11 @@ export const Select: ISchema = {
         defaultChecked: true,
       },
     },
-    defaultOpen: {
-      type: 'boolean',
-      'x-decorator': 'FormItem',
-      'x-component': 'Switch',
-    },
+    // defaultOpen: {
+    //   type: 'boolean',
+    //   'x-decorator': 'FormItem',
+    //   'x-component': 'Switch',
+    // },
     labelInValue: {
       type: 'boolean',
       'x-decorator': 'FormItem',
@@ -75,22 +75,22 @@ export const Select: ISchema = {
       'x-decorator': 'FormItem',
       'x-component': 'Switch',
     },
-    virtual: {
-      type: 'boolean',
-      'x-decorator': 'FormItem',
-      'x-component': 'Switch',
-      'x-component-props': {
-        defaultValue: true,
-      },
-    },
-    filterOption: {
-      type: 'boolean',
-      'x-decorator': 'FormItem',
-      'x-component': 'ValueInput',
-      'x-component-props': {
-        include: ['BOOLEAN'],
-      },
-    },
+    // virtual: {
+    //   type: 'boolean',
+    //   'x-decorator': 'FormItem',
+    //   'x-component': 'Switch',
+    //   'x-component-props': {
+    //     defaultValue: true,
+    //   },
+    // },
+    // filterOption: {
+    //   type: 'boolean',
+    //   'x-decorator': 'FormItem',
+    //   'x-component': 'ValueInput',
+    //   'x-component-props': {
+    //     include: ['BOOLEAN'],
+    //   },
+    // },
     listHeight: {
       type: 'number',
       'x-decorator': 'FormItem',
@@ -104,11 +104,11 @@ export const Select: ISchema = {
       'x-decorator': 'FormItem',
       'x-component': 'NumberPicker',
     },
-    maxTagPlaceholder: {
-      type: 'string',
-      'x-decorator': 'FormItem',
-      'x-component': 'Input',
-    },
+    // maxTagPlaceholder: {
+    //   type: 'string',
+    //   'x-decorator': 'FormItem',
+    //   'x-component': 'Input',
+    // },
     maxTagTextLength: {
       type: 'number',
       'x-decorator': 'FormItem',
