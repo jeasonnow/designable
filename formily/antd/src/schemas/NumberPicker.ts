@@ -3,11 +3,11 @@ import { ISchema } from '@formily/react'
 export const NumberPicker: ISchema = {
   type: 'object',
   properties: {
-    decimalSeparator: {
-      type: 'string',
-      'x-decorator': 'FormItem',
-      'x-component': 'Input',
-    },
+    // decimalSeparator: {
+    //   type: 'string',
+    //   'x-decorator': 'FormItem',
+    //   'x-component': 'Input',
+    // },
     precision: {
       type: 'number',
       'x-decorator': 'FormItem',
