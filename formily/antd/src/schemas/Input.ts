@@ -3,16 +3,16 @@ import { ISchema } from '@formily/react'
 export const Input: ISchema & { TextArea?: ISchema } = {
   type: 'object',
   properties: {
-    addonBefore: {
-      type: 'string',
-      'x-decorator': 'FormItem',
-      'x-component': 'Input',
-    },
-    addonAfter: {
-      type: 'string',
-      'x-decorator': 'FormItem',
-      'x-component': 'Input',
-    },
+    // addonBefore: {
+    //   type: 'string',
+    //   'x-decorator': 'FormItem',
+    //   'x-component': 'Input',
+    // },
+    // addonAfter: {
+    //   type: 'string',
+    //   'x-decorator': 'FormItem',
+    //   'x-component': 'Input',
+    // },
     prefix: {
       type: 'string',
       'x-decorator': 'FormItem',

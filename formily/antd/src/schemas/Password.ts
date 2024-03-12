@@ -9,5 +9,7 @@ export const Password: ISchema = {
       'x-decorator': 'FormItem',
       'x-component': 'Switch',
     },
+    prefix: false,
+    suffix: false,
   },
 }

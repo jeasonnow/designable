@@ -8,16 +8,16 @@ export const FormItem: ISchema = {
       'x-decorator': 'FormItem',
       'x-component': 'Input',
     },
-    addonBefore: {
-      type: 'string',
-      'x-decorator': 'FormItem',
-      'x-component': 'Input',
-    },
-    addonAfter: {
-      type: 'string',
-      'x-decorator': 'FormItem',
-      'x-component': 'Input',
-    },
+    // addonBefore: {
+    //   type: 'string',
+    //   'x-decorator': 'FormItem',
+    //   'x-component': 'Input',
+    // },
+    // addonAfter: {
+    //   type: 'string',
+    //   'x-decorator': 'FormItem',
+    //   'x-component': 'Input',
+    // },
     labelCol: {
       type: 'number',
       'x-decorator': 'FormItem',
