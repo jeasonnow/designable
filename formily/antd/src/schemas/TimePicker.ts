@@ -1,14 +1,14 @@
 import { ISchema } from '@formily/react'
 
 export const CommonTimePickerAPI = {
-  allowClear: {
-    type: 'boolean',
-    'x-decorator': 'FormItem',
-    'x-component': 'Switch',
-    'x-component-props': {
-      defaultChecked: true,
-    },
-  },
+  // allowClear: {
+  //   type: 'boolean',
+  //   'x-decorator': 'FormItem',
+  //   'x-component': 'Switch',
+  //   'x-component-props': {
+  //     defaultChecked: true,
+  //   },
+  // },
   // autoFocus: {
   //   type: 'boolean',
   //   'x-decorator': 'FormItem',

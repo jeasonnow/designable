@@ -42,45 +42,45 @@ export const ValueInput = createPolyInput([
     component: Input,
     checker: isNormalText,
   },
-  // {
-  //   type: 'EXPRESSION',
-  //   icon: 'Expression',
-  //   component: (props: any) => {
-  //     return (
-  //       <Popover
-  //         content={
-  //           <div
-  //             style={{
-  //               width: 400,
-  //               height: 200,
-  //               marginLeft: -16,
-  //               marginRight: -16,
-  //               marginBottom: -12,
-  //             }}
-  //           >
-  //             <MonacoInput {...props} language="javascript.expression" />
-  //           </div>
-  //         }
-  //         trigger="click"
-  //       >
-  //         <Button block>
-  //           <TextWidget token="SettingComponents.ValueInput.expression" />
-  //         </Button>
-  //       </Popover>
-  //     )
-  //   },
-  //   checker: isExpression,
-  //   toInputValue: (value) => {
-  //     if (!value || value === '{{}}') return
-  //     const matched = String(value).match(EXPRESSION_REX)
-  //     return matched?.[1] || value || ''
-  //   },
-  //   toChangeValue: (value) => {
-  //     if (!value || value === '{{}}') return
-  //     const matched = String(value).match(EXPRESSION_REX)
-  //     return `{{${matched?.[1] || value || ''}}}`
-  //   },
-  // },
+  {
+    type: 'EXPRESSION',
+    icon: 'Expression',
+    component: (props: any) => {
+      return (
+        <Popover
+          content={
+            <div
+              style={{
+                width: 400,
+                height: 200,
+                marginLeft: -16,
+                marginRight: -16,
+                marginBottom: -12,
+              }}
+            >
+              <MonacoInput {...props} language="javascript.expression" />
+            </div>
+          }
+          trigger="click"
+        >
+          <Button block>
+            <TextWidget token="SettingComponents.ValueInput.expression" />
+          </Button>
+        </Popover>
+      )
+    },
+    checker: isExpression,
+    toInputValue: (value) => {
+      if (!value || value === '{{}}') return
+      const matched = String(value).match(EXPRESSION_REX)
+      return matched?.[1] || value || ''
+    },
+    toChangeValue: (value) => {
+      if (!value || value === '{{}}') return
+      const matched = String(value).match(EXPRESSION_REX)
+      return `{{${matched?.[1] || value || ''}}}`
+    },
+  },
   {
     type: 'BOOLEAN',
     icon: 'Boolean',
