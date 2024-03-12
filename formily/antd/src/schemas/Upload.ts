@@ -62,14 +62,14 @@ export const Upload: ISchema & { Dragger?: ISchema } = {
       'x-decorator': 'FormItem',
       'x-component': 'Switch',
     },
-    openFileDialogOnClick: {
-      type: 'boolean',
-      'x-decorator': 'FormItem',
-      'x-component': 'Switch',
-      'x-component-props': {
-        defaultChecked: true,
-      },
-    },
+    // openFileDialogOnClick: {
+    //   type: 'boolean',
+    //   'x-decorator': 'FormItem',
+    //   'x-component': 'Switch',
+    //   'x-component-props': {
+    //     defaultChecked: true,
+    //   },
+    // },
     showUploadList: {
       type: 'boolean',
       'x-decorator': 'FormItem',
