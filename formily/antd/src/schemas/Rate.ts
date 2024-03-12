@@ -3,14 +3,14 @@ import { ISchema } from '@formily/react'
 export const Rate: ISchema = {
   type: 'object',
   properties: {
-    allowClear: {
-      type: 'boolean',
-      'x-decorator': 'FormItem',
-      'x-component': 'Switch',
-      'x-component-props': {
-        defaultChecked: true,
-      },
-    },
+    // allowClear: {
+    //   type: 'boolean',
+    //   'x-decorator': 'FormItem',
+    //   'x-component': 'Switch',
+    //   'x-component-props': {
+    //     defaultChecked: true,
+    //   },
+    // },
     count: {
       type: 'number',
       'x-decorator': 'FormItem',
