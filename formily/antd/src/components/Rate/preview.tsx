@@ -13,7 +13,7 @@ Rate.Behavior = createBehavior({
   extends: ['Field'],
   selector: (node) => node.props['x-component'] === 'Rate',
   designerProps: {
-    propsSchema: createFieldSchema(AllSchemas.Rate),
+    propsSchema: createFieldSchema(AllSchemas.Rate, AllSchemas.FormItem, true),
   },
   designerLocales: AllLocales.Rate,
 })

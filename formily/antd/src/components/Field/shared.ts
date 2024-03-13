@@ -42,7 +42,8 @@ export const createComponentSchema = (
 
 export const createFieldSchema = (
   component?: ISchema,
-  decorator: ISchema = AllSchemas.FormItem
+  decorator: ISchema = AllSchemas.FormItem,
+  withoutEnum = false
 ): ISchema => {
   return {
     type: 'object',
@@ -88,13 +89,17 @@ export const createFieldSchema = (
             'x-decorator': 'FormItem',
             'x-component': 'ValueInput',
           },
-          enum: {
-            'x-decorator': 'FormItem',
-            'x-component': DataSourceSetter,
-            'x-component-props': {
-              allowExtendOption: false,
-            },
-          },
+          ...(withoutEnum
+            ? {}
+            : {
+                enum: {
+                  'x-decorator': 'FormItem',
+                  'x-component': DataSourceSetter,
+                  'x-component-props': {
+                    allowExtendOption: false,
+                  },
+                },
+              }),
           'x-validator': {
             type: 'array',
             'x-component': ValidatorSetter,

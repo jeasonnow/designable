@@ -14,7 +14,11 @@ Upload.Behavior = createBehavior({
   extends: ['Field'],
   selector: (node) => node.props['x-component'] === 'Upload',
   designerProps: {
-    propsSchema: createFieldSchema(AllSchemas.Upload),
+    propsSchema: createFieldSchema(
+      AllSchemas.Upload,
+      AllSchemas.FormItem,
+      true
+    ),
   },
   designerLocales: AllLocales.Upload,
 })

@@ -14,7 +14,11 @@ Password.Behavior = createBehavior({
   extends: ['Field'],
   selector: (node) => node.props['x-component'] === 'Password',
   designerProps: {
-    propsSchema: createFieldSchema(AllSchemas.Password),
+    propsSchema: createFieldSchema(
+      AllSchemas.Password,
+      AllSchemas.FormItem,
+      true
+    ),
   },
   designerLocales: AllLocales.Password,
 })
