@@ -43,7 +43,8 @@ export const createComponentSchema = (
 export const createFieldSchema = (
   component?: ISchema,
   decorator: ISchema = AllSchemas.FormItem,
-  withoutEnum = false
+  withoutEnum = false,
+  withoutDefault = false
 ): ISchema => {
   return {
     type: 'object',
@@ -85,13 +86,17 @@ export const createFieldSchema = (
               defaultValue: 'editable',
             },
           },
-          default: {
-            'x-decorator': 'FormItem',
-            'x-component': 'ValueInput',
-            'x-component-props': {
-              exclude: ['EXPRESSION'],
-            },
-          },
+          ...(withoutDefault
+            ? {}
+            : {
+                default: {
+                  'x-decorator': 'FormItem',
+                  'x-component': 'ValueInput',
+                  'x-component-props': {
+                    exclude: ['EXPRESSION'],
+                  },
+                },
+              }),
           ...(withoutEnum
             ? {}
             : {
@@ -121,7 +126,8 @@ export const createFieldSchema = (
 
 export const createVoidFieldSchema = (
   component?: ISchema,
-  decorator: ISchema = AllSchemas.FormItem
+  decorator: ISchema = AllSchemas.FormItem,
+  without_XPattern = false
 ) => {
   return {
     type: 'object',
@@ -159,24 +165,28 @@ export const createVoidFieldSchema = (
               },
             },
           },
-          'x-display': {
-            type: 'string',
-            enum: ['visible', 'hidden', 'none', ''],
-            'x-decorator': 'FormItem',
-            'x-component': 'Select',
-            'x-component-props': {
-              defaultValue: 'visible',
-            },
-          },
-          'x-pattern': {
-            type: 'string',
-            enum: ['editable', 'disabled', 'readOnly', 'readPretty', ''],
-            'x-decorator': 'FormItem',
-            'x-component': 'Select',
-            'x-component-props': {
-              defaultValue: 'editable',
-            },
-          },
+          // 'x-display': {
+          //   type: 'string',
+          //   enum: ['visible', 'hidden', 'none', ''],
+          //   'x-decorator': 'FormItem',
+          //   'x-component': 'Select',
+          //   'x-component-props': {
+          //     defaultValue: 'visible',
+          //   },
+          // },
+          ...(without_XPattern
+            ? {}
+            : {
+                'x-pattern': {
+                  type: 'string',
+                  enum: ['editable', 'disabled'],
+                  'x-decorator': 'FormItem',
+                  'x-component': 'Select',
+                  'x-component-props': {
+                    defaultValue: 'editable',
+                  },
+                },
+              }),
           'x-decorator': {
             type: 'string',
             'x-decorator': 'FormItem',
