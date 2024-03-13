@@ -5,6 +5,7 @@ import { observer } from '@formily/react'
 import { Form as FormilyForm } from '@formily/antd'
 import { usePrefix, DnFC } from '@designable/react'
 import { AllLocales } from '../../locales'
+import { AllSchemas } from '../../schemas'
 import './styles.less'
 
 export const Form: DnFC<React.ComponentProps<typeof FormilyForm>> = observer(
@@ -42,7 +43,7 @@ Form.Behavior = createBehavior({
       propsSchema: {
         type: 'object',
         properties: {
-          // ...(AllSchemas.FormLayout.properties as any),
+          ...(AllSchemas.FormLayout.properties as any),
           // style: AllSchemas.CSSStyle,
         },
       },
