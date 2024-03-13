@@ -22,10 +22,17 @@ export const CommonTimePickerAPI = {
       defaultChecked: true,
     },
   },
-  clearText: {
-    type: 'string',
+  // clearText: {
+  //   type: 'string',
+  //   'x-decorator': 'FormItem',
+  //   'x-component': 'Input',
+  // },
+  disabledTime: {
     'x-decorator': 'FormItem',
-    'x-component': 'Input',
+    'x-component': 'ValueInput',
+    'x-component-props': {
+      include: ['EXPRESSION'],
+    },
   },
   hideDisabledOptions: {
     type: 'boolean',

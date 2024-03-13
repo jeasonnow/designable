@@ -49,6 +49,9 @@ TimePicker.Resource = createResource(
           title: 'TimePicker',
           'x-decorator': 'FormItem',
           'x-component': 'TimePicker',
+          'x-component-props': {
+            allowClear: false,
+          },
         },
       },
     ],
@@ -63,6 +66,9 @@ TimePicker.Resource = createResource(
           title: 'TimeRangePicker',
           'x-decorator': 'FormItem',
           'x-component': 'TimePicker.RangePicker',
+          'x-component-props': {
+            allowClear: false,
+          },
         },
       },
     ],

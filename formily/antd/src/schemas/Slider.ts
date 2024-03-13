@@ -4,11 +4,11 @@ import { ISchema } from '@formily/react'
 export const Slider: ISchema = {
   type: 'object',
   properties: {
-    allowClear: {
-      type: 'boolean',
-      'x-decorator': 'FormItem',
-      'x-component': 'Switch',
-    },
+    // allowClear: {
+    //   type: 'boolean',
+    //   'x-decorator': 'FormItem',
+    //   'x-component': 'Switch',
+    // },
     dots: {
       title: GlobalRegistry.getDesignerMessage('settings.sliderDots'),
       type: 'boolean',

@@ -1,14 +1,14 @@
 import { ISchema } from '@formily/react'
 
 const CommonDatePickerAPI = {
-  allowClear: {
-    type: 'boolean',
-    'x-decorator': 'FormItem',
-    'x-component': 'Switch',
-    'x-component-props': {
-      defaultChecked: true,
-    },
-  },
+  // allowClear: {
+  //   type: 'boolean',
+  //   'x-decorator': 'FormItem',
+  //   'x-component': 'Switch',
+  //   'x-component-props': {
+  //     defaultChecked: true,
+  //   },
+  // },
   // autoFocus: {
   //   type: 'boolean',
   //   'x-decorator': 'FormItem',
@@ -22,20 +22,20 @@ const CommonDatePickerAPI = {
       defaultChecked: true,
     },
   },
-  // disabledTime: {
-  //   'x-decorator': 'FormItem',
-  //   'x-component': 'ValueInput',
-  //   'x-component-props': {
-  //     include: ['EXPRESSION'],
-  //   },
-  // },
-  // disabledDate: {
-  //   'x-decorator': 'FormItem',
-  //   'x-component': 'ValueInput',
-  //   'x-component-props': {
-  //     include: ['EXPRESSION'],
-  //   },
-  // },
+  disabledTime: {
+    'x-decorator': 'FormItem',
+    'x-component': 'ValueInput',
+    'x-component-props': {
+      include: ['EXPRESSION'],
+    },
+  },
+  disabledDate: {
+    'x-decorator': 'FormItem',
+    'x-component': 'ValueInput',
+    'x-component-props': {
+      include: ['EXPRESSION'],
+    },
+  },
   inputReadOnly: {
     type: 'boolean',
     'x-decorator': 'FormItem',

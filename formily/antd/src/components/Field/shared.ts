@@ -88,6 +88,9 @@ export const createFieldSchema = (
           default: {
             'x-decorator': 'FormItem',
             'x-component': 'ValueInput',
+            'x-component-props': {
+              exclude: ['EXPRESSION'],
+            },
           },
           ...(withoutEnum
             ? {}

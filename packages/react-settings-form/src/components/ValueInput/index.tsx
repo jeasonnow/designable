@@ -58,7 +58,7 @@ export const ValueInput = createPolyInput([
                 marginBottom: -12,
               }}
             >
-              <MonacoInput {...props} language="javascript.expression" />
+              <Input.TextArea row={5} {...props} />
             </div>
           }
           trigger="click"
