@@ -37,14 +37,14 @@ export const Upload: ISchema & { Dragger?: ISchema } = {
         include: ['EXPRESSION'],
       },
     },
-    withCredentials: {
-      type: 'boolean',
-      'x-decorator': 'FormItem',
-      'x-component': 'Switch',
-      'x-component-props': {
-        defaultChecked: true,
-      },
-    },
+    // withCredentials: {
+    //   type: 'boolean',
+    //   'x-decorator': 'FormItem',
+    //   'x-component': 'Switch',
+    //   'x-component-props': {
+    //     defaultChecked: true,
+    //   },
+    // },
     timeout: {
       type: 'number',
       'x-decorator': 'FormItem',

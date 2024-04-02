@@ -40,7 +40,7 @@ export const FormLayout: ISchema = {
     },
     size: {
       type: 'string',
-      enum: ['small', 'default', 'large', null],
+      enum: ['small', 'default', 'large'],
       'x-decorator': 'FormItem',
       'x-component': 'Select',
       'x-component-props': {

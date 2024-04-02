@@ -35,18 +35,18 @@ export const NumberPicker: ISchema = {
     },
     size: {
       type: 'string',
-      enum: ['large', 'small', 'middle', null],
+      enum: ['large', 'small', 'middle'],
       'x-decorator': 'FormItem',
       'x-component': 'Select',
       'x-component-props': {
         defaultValue: 'middle',
       },
     },
-    stringMode: {
-      type: 'boolean',
-      'x-decorator': 'FormItem',
-      'x-component': 'Switch',
-    },
+    // stringMode: {
+    //   type: 'boolean',
+    //   'x-decorator': 'FormItem',
+    //   'x-component': 'Switch',
+    // },
     bordered: {
       type: 'boolean',
       'x-decorator': 'FormItem',

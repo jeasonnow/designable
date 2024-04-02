@@ -44,7 +44,8 @@ export const createFieldSchema = (
   component?: ISchema,
   decorator: ISchema = AllSchemas.FormItem,
   withoutEnum = false,
-  withoutDefault = false
+  withoutDefault = false,
+  withoutValidator = false
 ): ISchema => {
   return {
     type: 'object',
@@ -108,10 +109,14 @@ export const createFieldSchema = (
                   },
                 },
               }),
-          'x-validator': {
-            type: 'array',
-            'x-component': ValidatorSetter,
-          },
+          ...(withoutValidator
+            ? {}
+            : {
+                'x-validator': {
+                  type: 'array',
+                  'x-component': ValidatorSetter,
+                },
+              }),
           required: {
             type: 'boolean',
             'x-decorator': 'FormItem',

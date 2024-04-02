@@ -14,7 +14,14 @@ Select.Behavior = createBehavior({
   extends: ['Field'],
   selector: (node) => node.props['x-component'] === 'Select',
   designerProps: {
-    propsSchema: createFieldSchema(AllSchemas.Select),
+    // propsSchema: createFieldSchema(AllSchemas.Select),
+    propsSchema: createFieldSchema(
+      AllSchemas.Select,
+      AllSchemas.FormItem,
+      false,
+      false,
+      true
+    ),
   },
   designerLocales: AllLocales.Select,
 })

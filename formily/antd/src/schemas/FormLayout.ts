@@ -47,15 +47,15 @@ export const FormLayout: ISchema = {
     //     defaultValue: 'default',
     //   },
     // },
-    // layout: {
-    //   type: 'string',
-    //   enum: ['vertical', 'horizontal', 'inline', null],
-    //   'x-decorator': 'FormItem',
-    //   'x-component': 'Select',
-    //   'x-component-props': {
-    //     defaultValue: 'horizontal',
-    //   },
-    // },
+    layout: {
+      type: 'string',
+      enum: ['vertical', 'horizontal'],
+      'x-decorator': 'FormItem',
+      'x-component': 'Select',
+      'x-component-props': {
+        defaultValue: 'horizontal',
+      },
+    },
     // tooltipLayout: {
     //   type: 'string',
     //   enum: ['icon', 'text', null],

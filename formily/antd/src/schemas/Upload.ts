@@ -78,11 +78,11 @@ export const Upload: ISchema & { Dragger?: ISchema } = {
         defaultChecked: true,
       },
     },
-    withCredentials: {
-      type: 'boolean',
-      'x-decorator': 'FormItem',
-      'x-component': 'Switch',
-    },
+    // withCredentials: {
+    //   type: 'boolean',
+    //   'x-decorator': 'FormItem',
+    //   'x-component': 'Switch',
+    // },
   },
 }
 

@@ -16,6 +16,8 @@ Switch.Behavior = createBehavior({
     propsSchema: createFieldSchema(
       AllSchemas.Switch,
       AllSchemas.FormItem,
+      true,
+      false,
       true
     ),
   },

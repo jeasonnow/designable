@@ -10,7 +10,7 @@ export const Switch: ISchema = {
     // },
     size: {
       type: 'string',
-      enum: ['large', 'small', 'default', ''],
+      enum: ['large', 'small', 'default'],
       'x-decorator': 'FormItem',
       'x-component': 'Select',
       'x-component-props': {
