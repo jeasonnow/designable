@@ -18,6 +18,8 @@ DatePicker.Behavior = createBehavior(
       propsSchema: createFieldSchema(
         AllSchemas.DatePicker,
         AllSchemas.FormItem,
+        true,
+        false,
         true
       ),
     },
@@ -31,6 +33,8 @@ DatePicker.Behavior = createBehavior(
       propsSchema: createFieldSchema(
         AllSchemas.DatePicker.RangePicker,
         AllSchemas.FormItem,
+        true,
+        false,
         true
       ),
     },

@@ -16,6 +16,8 @@ Slider.Behavior = createBehavior({
     propsSchema: createFieldSchema(
       AllSchemas.Slider,
       AllSchemas.FormItem,
+      true,
+      false,
       true
     ),
   },

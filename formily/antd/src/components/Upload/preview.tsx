@@ -17,6 +17,8 @@ Upload.Behavior = createBehavior({
     propsSchema: createFieldSchema(
       AllSchemas.Upload,
       AllSchemas.FormItem,
+      true,
+      false,
       true
     ),
   },

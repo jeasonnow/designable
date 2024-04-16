@@ -60,11 +60,11 @@ export const Select: ISchema = {
     //   'x-decorator': 'FormItem',
     //   'x-component': 'Switch',
     // },
-    labelInValue: {
-      type: 'boolean',
-      'x-decorator': 'FormItem',
-      'x-component': 'Switch',
-    },
+    // labelInValue: {
+    //   type: 'boolean',
+    //   'x-decorator': 'FormItem',
+    //   'x-component': 'Switch',
+    // },
     showArrow: {
       type: 'boolean',
       'x-decorator': 'FormItem',

@@ -18,6 +18,8 @@ NumberPicker.Behavior = createBehavior({
     propsSchema: createFieldSchema(
       AllSchemas.NumberPicker,
       AllSchemas.FormItem,
+      true,
+      false,
       true
     ),
   },

@@ -18,6 +18,8 @@ TimePicker.Behavior = createBehavior(
       propsSchema: createFieldSchema(
         AllSchemas.TimePicker,
         AllSchemas.FormItem,
+        true,
+        false,
         true
       ),
     },
@@ -31,6 +33,8 @@ TimePicker.Behavior = createBehavior(
       propsSchema: createFieldSchema(
         AllSchemas.TimePicker.RangePicker,
         AllSchemas.FormItem,
+        true,
+        false,
         true
       ),
     },

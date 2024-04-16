@@ -14,7 +14,13 @@ Checkbox.Behavior = createBehavior({
   extends: ['Field'],
   selector: (node) => node.props['x-component'] === 'Checkbox.Group',
   designerProps: {
-    propsSchema: createFieldSchema(AllSchemas.Checkbox.Group),
+    propsSchema: createFieldSchema(
+      AllSchemas.Checkbox.Group,
+      AllSchemas.FormItem,
+      false,
+      false,
+      true
+    ),
   },
   designerLocales: AllLocales.CheckboxGroup,
 })
