@@ -34,7 +34,7 @@ TimePicker.Behavior = createBehavior(
         AllSchemas.TimePicker.RangePicker,
         AllSchemas.FormItem,
         true,
-        false,
+        true,
         true
       ),
     },

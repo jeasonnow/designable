@@ -22,20 +22,20 @@ const CommonDatePickerAPI = {
       defaultChecked: true,
     },
   },
-  disabledTime: {
-    'x-decorator': 'FormItem',
-    'x-component': 'ValueInput',
-    'x-component-props': {
-      include: ['EXPRESSION'],
-    },
-  },
-  disabledDate: {
-    'x-decorator': 'FormItem',
-    'x-component': 'ValueInput',
-    'x-component-props': {
-      include: ['EXPRESSION'],
-    },
-  },
+  // disabledTime: {
+  //   'x-decorator': 'FormItem',
+  //   'x-component': 'ValueInput',
+  //   'x-component-props': {
+  //     include: ['EXPRESSION'],
+  //   },
+  // },
+  // disabledDate: {
+  //   'x-decorator': 'FormItem',
+  //   'x-component': 'ValueInput',
+  //   'x-component-props': {
+  //     include: ['EXPRESSION'],
+  //   },
+  // },
   inputReadOnly: {
     type: 'boolean',
     'x-decorator': 'FormItem',
@@ -70,7 +70,7 @@ export const DatePicker: ISchema & { RangePicker?: ISchema } = {
   properties: {
     picker: {
       type: 'string',
-      enum: ['time', 'date', 'month', 'year', 'quarter'],
+      enum: ['date', 'month', 'year'],
       'x-decorator': 'FormItem',
       'x-component': 'Select',
       'x-component-props': {
@@ -101,7 +101,7 @@ DatePicker.RangePicker = {
   properties: {
     picker: {
       type: 'string',
-      enum: ['time', 'date', 'month', 'year'],
+      enum: ['date', 'month', 'year'],
       'x-decorator': 'FormItem',
       'x-component': 'Select',
       'x-component-props': {

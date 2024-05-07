@@ -27,28 +27,28 @@ export const CommonTimePickerAPI = {
   //   'x-decorator': 'FormItem',
   //   'x-component': 'Input',
   // },
-  disabledTime: {
-    'x-decorator': 'FormItem',
-    'x-component': 'ValueInput',
-    'x-component-props': {
-      include: ['EXPRESSION'],
-    },
-  },
-  hideDisabledOptions: {
-    type: 'boolean',
-    'x-decorator': 'FormItem',
-    'x-component': 'Switch',
-  },
+  // disabledTime: {
+  //   'x-decorator': 'FormItem',
+  //   'x-component': 'ValueInput',
+  //   'x-component-props': {
+  //     include: ['EXPRESSION'],
+  //   },
+  // },
+  // hideDisabledOptions: {
+  //   type: 'boolean',
+  //   'x-decorator': 'FormItem',
+  //   'x-component': 'Switch',
+  // },
   inputReadOnly: {
     type: 'boolean',
     'x-decorator': 'FormItem',
     'x-component': 'Switch',
   },
-  showNow: {
-    type: 'boolean',
-    'x-decorator': 'FormItem',
-    'x-component': 'Switch',
-  },
+  // showNow: {
+  //   type: 'boolean',
+  //   'x-decorator': 'FormItem',
+  //   'x-component': 'Switch',
+  // },
   use12Hours: {
     type: 'boolean',
     'x-decorator': 'FormItem',

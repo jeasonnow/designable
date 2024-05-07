@@ -17,7 +17,7 @@ export const DatePicker = {
         format: '格式',
         picker: {
           title: '选择器类型',
-          dataSource: ['时间', '日期', '月份', '年', '季度', '财年'],
+          dataSource: ['日期', '月份', '年'],
         },
         showNow: '显示此刻',
         showTime: '时间选择',
@@ -41,7 +41,7 @@ export const DatePicker = {
         format: 'Format',
         picker: {
           title: 'Picker Type',
-          dataSource: ['Time', 'Date', 'Month', 'Year', 'Quarter', 'Decade'],
+          dataSource: ['Date', 'Month', 'Year'],
         },
         showNow: 'Show Now',
         showTime: 'Show Time',
@@ -65,7 +65,7 @@ export const DatePicker = {
         format: '포맷',
         picker: {
           title: '타입',
-          dataSource: ['시간', '날짜', '월', '년', '분기', '십년 단위'],
+          dataSource: ['날짜', '월', '년'],
         },
         showNow: '현재 시각 보기',
         showTime: '시간 보기',

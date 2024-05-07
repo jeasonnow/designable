@@ -19,7 +19,7 @@ DatePicker.Behavior = createBehavior(
         AllSchemas.DatePicker,
         AllSchemas.FormItem,
         true,
-        false,
+        true,
         true
       ),
     },
@@ -34,7 +34,7 @@ DatePicker.Behavior = createBehavior(
         AllSchemas.DatePicker.RangePicker,
         AllSchemas.FormItem,
         true,
-        false,
+        true,
         true
       ),
     },

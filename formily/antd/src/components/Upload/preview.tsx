@@ -18,7 +18,7 @@ Upload.Behavior = createBehavior({
       AllSchemas.Upload,
       AllSchemas.FormItem,
       true,
-      false,
+      true,
       true
     ),
   },
