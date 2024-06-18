@@ -65,15 +65,15 @@ export const FormLayout: ISchema = {
     //     defaultValue: 'icon',
     //   },
     // },
-    // labelAlign: {
-    //   type: 'string',
-    //   enum: ['left', 'right', null],
-    //   'x-decorator': 'FormItem',
-    //   'x-component': 'Select',
-    //   'x-component-props': {
-    //     defaultValue: 'right',
-    //   },
-    // },
+    labelAlign: {
+      type: 'string',
+      enum: ['left', 'right'],
+      'x-decorator': 'FormItem',
+      'x-component': 'Select',
+      'x-component-props': {
+        defaultValue: 'right',
+      },
+    },
     // wrapperAlign: {
     //   type: 'string',
     //   enum: ['left', 'right', null],
